@@ -1,0 +1,272 @@
+* {
+    font-family: 'Inter';
+}
+
+.carousel-inner {
+    padding: 1em;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  .card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .card .img-wrapper {
+      height: 17em;
+    }
+}
+
+.logo {
+    width: 64px;
+}
+
+.top-bar {
+    background-color: #192D2B;
+}
+
+p {
+    margin-bottom: 0!important;
+}
+
+h5 {
+    font-family: 'Inter';
+
+    margin-bottom: 0;
+}
+
+.presentation {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.socials img {
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-collapse {
+    align-self: right;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.nav-link {
+    margin-top: 5px;
+}
+
+.ouverture {
+    background: #36C66E;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.footer {
+    background-image: url('./assets/nourriture-plats.jpg');
+}
+
+.reserve-container {
+    background-image: url('./assets/nourriture-plats.jpg');
+}
+
+.presentation-container {
+    background-image: url('./assets/nourriture-plats.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.livraison-button {
+    background: #192D2B;
+    border-radius: 44px;
+    color: white;
+    font-weight: bold;
+}
+
+.collect-button {
+    background: #FFFFFF;
+    border-radius: 44px;
+    color: #192D2B;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Inter';
+    font-weight: 900!important;
+    font-style: normal;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: #666666;
+}
+
+.bg-green {
+    background: #192D2B;
+}
+
+.py-10 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.py-7 {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.h-40 {
+    height: 40%
+}
+
+.horaires-container {
+    background-color: #F7F8F9;
+}
+
+.info-container {
+    background: rgba(25, 45, 43, 0.04);
+
+}
+
+.mentions {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-paragraph {
+    color: rgba(255, 255, 255, 0.6);
+}
+.w-20 {
+    width: 25%;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+
+.logo-nav {
+    margin-top: -10px;
+}
+
+.logo-container {
+    margin-left: 9vw;
+}
+
+.custom-nav {
+    margin-right: 11vw;
+}
+
+.title {
+    font-size: 42px;
+}
+
+.subtitle {
+    font-size: 28px;
+}
+
+.card h5 {
+    font-weight: bold;
+}
+
+.card-arrow {
+    background: #192D2B!important;
+}
+
+.adress {
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    z-index: 2;
+    background-color: white;
+    padding: 3%;
+}
+
+.horaires-container {
+    padding-left: 10%;
+    margin-top: 10%;
+    padding-top: 15%;
+}
+
+.horaires-inner {
+    margin-right: 15%;
+}
+
+.footer-icon {
+    width: 34px!important;
+    height: 34px!important;
+}
+
+@media (max-width: 1300px) {
+    .logo-container {
+        margin-left: 6vw;
+    }
+    .custom-nav {
+        margin-right: 6vw
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo-container {
+        margin-left: 4vw;
+    }
+    .custom-nav {
+        margin-right: 4vw
+    }
+}
+
+@media (max-width: 1120px) {
+    .logo-container {
+        margin-left: 2vw;
+    }
+    .custom-nav {
+        margin-right: 2vw
+    }
+}
