@@ -4,44 +4,51 @@
 
 .carousel-inner {
     padding: 1em;
-  }
-  .card {
+}
+
+.card {
     margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
+}
+
+.carousel-control-prev,
+.carousel-control-next {
     background-color: #e1e1e1;
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
-  }
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .carousel-item {
-      margin-right: 0;
-      flex: 0 0 33.333333%;
-      display: block;
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
     }
+
     .carousel-inner {
-      display: flex;
+        display: flex;
     }
-  }
-  .card .img-wrapper {
-      max-width: 100%;
-      height: 13em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .card img {
-      max-height: 100%;
-  }
-  @media (max-width: 767px) {
+}
+
+.card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    max-height: 100%;
+}
+
+@media (max-width: 767px) {
     .card .img-wrapper {
-      height: 17em;
+        height: 17em;
     }
 }
 
@@ -53,8 +60,17 @@
     background-color: #192D2B;
 }
 
+@media screen and (max-width: 600px) {
+
+    /* .top-bar div:first-child { */
+    .top-bar div:not(:last-child) {
+        display: none;
+        width: 0;
+    }
+}
+
 p {
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
 }
 
 h5 {
@@ -97,10 +113,35 @@ h5 {
 
 .footer {
     background-image: url('./assets/nourriture-plats.jpg');
+    background: rgba(29, 29, 29, 0.8);
 }
 
-.reserve-container {
-    background-image: url('./assets/nourriture-plats.jpg');
+.footer-infos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer-infos div {
+    width: 20%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer h2,
+    .footer h5 {
+        padding-inline: 20px;
+    }
+
+    .footer-infos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-infos div {
+        margin-block: 10px;
+        width: 60%;
+    }
 }
 
 .presentation-container {
@@ -108,6 +149,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .livraison-button {
@@ -115,6 +157,13 @@ h5 {
     border-radius: 44px;
     color: white;
     font-weight: bold;
+    min-width: 200px;
+    min-height: 40px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .collect-button {
@@ -122,18 +171,323 @@ h5 {
     border-radius: 44px;
     color: #192D2B;
     font-weight: bold;
+    min-width: 200px;
+    min-height: 40px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .presentation-btn {
+        flex-direction: column;
+    }
+
+    .livraison-button {
+        width: 100%;
+    }
+
+    .collect-button {
+        width: 100%;
+    }
+}
+
+.about-content {
+    width: 40%;
+    margin-top: 50px;
+}
+
+.about-content>p {
+    text-align: left;
+}
+
+.about-content>div>.livraison-button,
+.about-content>div>.collect-button {
+    min-width: 150px;
+    margin: 0;
+}
+
+.about-img {
+    display: flex;
+    width: 40%;
+    height: 420px;
+}
+
+.about-img .column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about-img .column:first-child {
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.img {
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 7px;
+}
+
+.img1 {
+    height: 57%;
+    background-image: url("./assets/img1.png");
+}
+
+.img2 {
+    height: 25%;
+    background-image: url("./assets/img2.png");
+}
+
+.img3 {
+    height: 40%;
+    background-image: url("./assets/img3.png");
+}
+
+.img4 {
+    height: 40%;
+    background-image: url("./assets/img4.png");
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about-img,
+    .about-img .column:first-child,
+    .img,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-img {
+        height: 200px;
+        justify-content: center;
+    }
+
+    .about-img .column:first-child {
+        margin: 10px;
+    }
+
+    .about-img .column:last-child {
+        display: none;
+    }
+
+    .img1 {
+        height: 100%;
+        background-size: cover;
+    }
+
+    .img2 {
+        display: none;
+    }
+
+    .about-content {
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    .about-content>div {
+        justify-content: center;
+    }
+
 }
 
 h2 {
     font-size: 36px;
     font-family: 'Inter';
-    font-weight: 900!important;
+    font-weight: 900 !important;
     font-style: normal;
+    margin: 0;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.images-triplet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 10px;
+    width: 49%;
+}
+
+.images-triplet div:first-child {
+    grid-column: 1;
+    grid-row: span 2;
+
+}
+
+.images-triplet div {
+    border-radius: 7px;
+    /* background-color: tomato; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    .images-container {
+        flex-direction: column;
+    }
+
+    .images-triplet {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .images-triplet div:first-child {
+        grid-column: 1;
+        grid-row: span 1;
+    }
+
+    .images-triplet div:nth-child(2) {
+        grid-column: 1;
+        grid-row: span 1;
+    }
+
+    .images-triplet div:last-child {
+        grid-column: 1;
+        grid-row: span 1;
+    }
+}
+
+.img5 {
+    background-image: url("./assets/img5.png");
+}
+
+.img6 {
+    background-image: url("./assets/img6.png");
+}
+
+.img7 {
+    background-image: url("./assets/nourriture-plats.jpg");
+}
+
+.img8 {
+    background-image: url("./assets/img8.png");
+}
+
+.menu-wrapper {
+    height: 90vh;
+    padding-inline: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-wrapper {
+        height: 60vh;
+    }
+
+    .menu-cards .card:not(:first-child) {
+        display: none;
+    }
+}
+
+.reserve-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url('./assets/nourriture-plats.jpg');
+}
+
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 40%;
+    padding: 30px 80px;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.select-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+}
+
+.select-group select {
+    min-width: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+    .select-group {
+        flex-direction: column;
+    }
+
+    .select-group select {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .booking {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .select-group {
+        padding: 15px;
+    }
+
+    .select-group select {
+        margin: 10px;
+        min-width: 200px;
+    }
+
+    .booking .livraison-button {
+        width: 200px;
+    }
+}
+
+.map-container {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container .container {
+    background-image: url('./assets/map.png');
+    background-size: contain;
+    height: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    .map-container {
+        height: 80vh;
+    }
+
+    .map-container .container {
+        height: 90%;
+        width: 90%;
+        background-size: cover;
+    }
 }
 
 .paragraph {
     font-size: 16px;
     color: #666666;
+    text-align: center;
 }
 
 .bg-green {
@@ -160,11 +514,34 @@ h2 {
 
 .horaires-container {
     background-color: #F7F8F9;
+    min-height: 90vh;
+    display: flex;
+}
+
+.infos {
+    margin: 0 20px;
 }
 
 .info-container {
     background: rgba(25, 45, 43, 0.04);
+    border-radius: 30px;
+    margin-block: 10px;
+}
 
+@media screen and (max-width: 600px) {
+    .horaires-container {
+        flex-direction: column;
+    }
+
+    .infos {
+        margin: 0;
+        margin-top: 10px;
+        padding-bottom: 100px;
+    }
+
+    .info-container {
+        max-width: 200px;
+    }
 }
 
 .mentions {
@@ -178,6 +555,7 @@ h2 {
 .footer-paragraph {
     color: rgba(255, 255, 255, 0.6);
 }
+
 .w-20 {
     width: 25%;
 }
@@ -217,7 +595,7 @@ h2 {
 }
 
 .card-arrow {
-    background: #192D2B!important;
+    background: #192D2B !important;
 }
 
 .adress {
@@ -240,14 +618,15 @@ h2 {
 }
 
 .footer-icon {
-    width: 34px!important;
-    height: 34px!important;
+    width: 34px !important;
+    height: 34px !important;
 }
 
 @media (max-width: 1300px) {
     .logo-container {
         margin-left: 6vw;
     }
+
     .custom-nav {
         margin-right: 6vw
     }
@@ -257,6 +636,7 @@ h2 {
     .logo-container {
         margin-left: 4vw;
     }
+
     .custom-nav {
         margin-right: 4vw
     }
@@ -266,6 +646,7 @@ h2 {
     .logo-container {
         margin-left: 2vw;
     }
+
     .custom-nav {
         margin-right: 2vw
     }

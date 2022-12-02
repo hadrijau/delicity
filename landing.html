@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
@@ -9,148 +10,156 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  </head>
-  <body>
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex flex-column p-0 bg-white">
-            <div class="top-bar w-100 d-flex justify-content-around py-2">
-                <div class="d-flex w-25">
-                    <div class="d-flex socials w-50 justify-content-around">
-                        <img src="./assets/messenger.png" alt="">
-                        <img src="./assets/facebook.png" alt="">
-                        <img src="./assets/instagram.png" alt="">
-                        <img src="./assets/trip_advisor.png" alt="">
-                    </div>
-                   
-                    
-                    <div class="w-50">
-                        <select name="select">
-                            <option value="">Français</option>
-                            <option value="dog">Dog</option>
-                            <option value="cat">Cat</option>
-                            <option value="hamster">Hamster</option>
-                            <option value="parrot">Parrot</option>
-                            <option value="spider">Spider</option>
-                            <option value="goldfish">Goldfish</option>
-                        </select>
-                    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex flex-column p-0 bg-white">
+        <div class="top-bar w-100 d-flex justify-content-around py-2">
+            <div class="d-flex w-25">
+                <div class="d-flex socials w-50 justify-content-around">
+                    <img src="./assets/messenger.png" alt="">
+                    <img src="./assets/facebook.png" alt="">
+                    <img src="./assets/instagram.png" alt="">
+                    <img src="./assets/trip_advisor.png" alt="">
                 </div>
-                
-    
-                <div class="d-flex">
-                    <p class="presentation">Beyrouth Café, 12 rue de la Buffa, 06000 Nice</p>
-                    <div class="ouverture mx-3 px-3">
-                        <p class="font-weight-bold">Ouvert jusque 22:00</p>
-                    </div>
+
+
+                <div class="w-50">
+                    <select name="select">
+                        <option value="">Français</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
                 </div>
             </div>
 
-            <div class="d-flex bg-white w-100 justify-content-around py-1">
-                <div class="d-flex logo-container w-40">
-                    <img src="./assets/logo.png" alt="" class="logo mx-3">
-                    <div class="mt-1">
-                        <h2 class="mb-0">Beyrouth Café</h5>
+
+            <div class="d-flex">
+                <p class="presentation">Beyrouth Café, 12 rue de la Buffa, 06000 Nice</p>
+                <div class="ouverture mx-3 px-3">
+                    <p class="font-weight-bold">Ouvert jusque 22:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex bg-white w-100 justify-content-around py-1">
+            <div class="d-flex logo-container w-40">
+                <img src="./assets/logo.png" alt="" class="logo mx-3">
+                <div class="mt-1">
+                    <h2 class="mb-0">Beyrouth Café</h5>
                         <p class="paragraph">From Beyrouth with Love · depuis 1998</p>
-                    </div>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end w-50 custom-nav" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#">Voir la carte</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Click & Collect</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Livraison</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Réserver</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Infos pratiques</a>
-                        </li>
-                        <li class="nav-item">
-                            <img src="./assets/panier.png" alt="" class="logo-nav">
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end w-50 custom-nav" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Voir la carte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Click & Collect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Livraison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Réserver</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Infos pratiques</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="./assets/panier.png" alt="" class="logo-nav">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <div class="vh-100 presentation-container">
-            <div class="d-flex flex-column">
-                <div class="d-flex align-center justify-content-center">
-                    <img src="./assets/logo.png" alt="">
-                </div>
-                <h2 class="text-center text-white title mt-3">Beyrouth Café</h3>
+    <div class="w-100 vh-100 presentation-container">
+        <div class="d-flex flex-column align-items-center">
+            <div class="d-flex align-center justify-content-center">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <h2 class="text-center text-white title mt-3">Beyrouth Café</h3>
                 <h5 class="text-center text-white subtitle my-4">From Beyrouth with Love · depuis 1998</h5>
-                <div class="d-flex justify-content-between w-75 align-self-center">
-                    <div class="livraison-button px-5 py-2">
-                        <p>Livraisons</p>
+                <div class="presentation-btn d-flex justify-content-center w-75 align-items-center">
+                    <div class="livraison-button ">
+                        Livraisons
                     </div>
-                    <div class="collect-button px-4 py-2">
+                    <div class="collect-button ">
                         <p>Click & Collect</p>
                     </div>
                 </div>
-            </div>
         </div>
+    </div>
 
-        <div class="vh-100 d-flex container justify-content-between py-10">
-            <div class="w-40 mt-5">
-                <h2>From Beyrouth with love, depuis 1998</h4>
-                <p class="paragraph my-3">Le restaurant Beyrouth Café est un restaurant libanais situé à Nice, dans la rue de la Buffa. Il propose une cuisine traditionnelle libanaise ainsi que des spécialités du pays.
-                    Vous pourrez y déguster des plats comme le hummus, le taboulé ou les falafels. Le restaurant est ouvert tous les jours de la semaine et vous pourrez y déjeuner ou dîner.
+    <div class="about d-flex container justify-content-between py-10">
+        <div class="about-content">
+            <h2>From Beyrouth with love, depuis 1998</h4>
+                <p class="paragraph text-left my-3">
+                    Le restaurant Beyrouth Café est un restaurant libanais situé à Nice,
+                    dans la
+                    rue de la Buffa. Il propose une cuisine traditionnelle libanaise ainsi que des spécialités du pays.
+                    Vous pourrez y déguster des plats comme le hummus, le taboulé ou les falafels. Le restaurant est
+                    ouvert tous les jours de la semaine et vous pourrez y déjeuner ou dîner.
                 </p>
 
                 <div class="d-flex mt-4">
-                    <div class="livraison-button px-5 py-1">
-                        <p>Réserver</p>
+                    <div class="livraison-button">
+                        Réserver
                     </div>
-                    <div class="collect-button px-3 py-1 mx-3">
-                        <p>Voir la carte</p>
+                    <div class="collect-button">
+                        Voir la carte
                     </div>
                 </div>
-            </div>
-
-            <div class="d-flex w-40">
-                <div class="mt-5">
-                    <img src="./assets/img1.png" alt="" class="my-2">
-                    <img src="./assets/img2.png" alt="" class="my-2">    
-                </div>
-                <div>
-                    <img src="./assets/img3.png" alt="" class="my-2">
-                    <img src="./assets/img4.png" alt="" class="my-2">
-                </div>
-            </div>
         </div>
 
-
-        <div class="vh-100 bg-green d-flex flex-column align-content-center">
-            <h2 class="text-white text-center py-7">Beyrouth Café en images</h4>
-
-            <div class="d-flex w-75 align-self-center">
-                <img src="./assets/img5.png" alt="" class="w-25 mx-2">
-                <div class="d-flex flex-column w-25 mx-2">
-                    <img src="./assets/img6.png" alt="" >
-                    <img src="./assets/img7.png" alt="">
-                </div>
-                <img src="./assets/img8.png" alt="" class="w-25 mx-2">
-                <div class="d-flex flex-column w-25 mx-2">
-                    <img src="./assets/img6.png" alt="">
-                    <img src="./assets/img7.png" alt="" class="w-100 h-100">
-                </div>
+        <div class="about-img d-flex">
+            <div class="column">
+                <div class="img img1"></div>
+                <div class="img img2"></div>
+            </div>
+            <div class="column">
+                <div class="img img3"></div>
+                <div class="img img4"></div>
             </div>
         </div>
+    </div>
 
-        <div class="vh-100 px-5 d-flex flex-column align-items-center">
-            <h2 class="py-7">Nos spécialités</h4>
 
-            <div class="d-flex align-self-center">
+    <div class="pb-5 bg-green d-flex flex-column align-items-center">
+        <h2 class="text-white text-center py-7">Beyrouth Café en images</h2>
+
+        <div class="images-container">
+            <div class="images-triplet">
+                <div class="img5"></div>
+                <div class="img6"></div>
+                <div class="img7"></div>
+            </div>
+            <div class="images-triplet">
+                <div class="img8"></div>
+                <div class="img7"></div>
+                <div class="img6"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-wrapper d-flex flex-column align-items-center">
+        <h2 class="py-7">Nos spécialités</h4>
+
+            <div class="menu-cards d-flex align-self-center">
                 <div class="card">
                     <img src="./assets/img6.png" class="d-block w-100" alt="...">
                     <div class="card-body">
@@ -162,7 +171,7 @@
                             </h4>
                             <a href="#" class="btn btn-primary card-arrow border-0">-></a>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="card">
@@ -176,7 +185,7 @@
                             </h4>
                             <a href="#" class="btn btn-primary card-arrow border-0">-></a>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="card">
@@ -190,7 +199,7 @@
                             </h4>
                             <a href="#" class="btn btn-primary card-arrow border-0">-></a>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="card">
@@ -204,7 +213,7 @@
                             </h4>
                             <a href="#" class="btn btn-primary card-arrow border-0">-></a>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="card">
@@ -218,132 +227,155 @@
                             </h4>
                             <a href="#" class="btn btn-primary card-arrow border-0">-></a>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
-            
-        </div>
 
-        <div class="vh-100 d-flex justify-content-center reserve-container">
-            <div class="book-table rounded bg-white h-40 w-50 align-self-center py-5 px-5 d-flex flex-column">
-                <h2 class="text-center">Réserver une table</h2>
-                <p class="paragraph py-3 text-center">
-                    Venez découvrir Beyrouth Café sur place en réservant votre table.
-                    Votre réservation sera validée rapidement en fonction de nos disponibilités.
-                </p>
-                <div class="d-flex py-3">
-                    <select class="form-select mx-1" aria-label="Default select example">
-                  
-                        <option selected>Date</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <select class="form-select mx-1" aria-label="Default select example">
-                        <option selected>Heure</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <select class="form-select mx-1" aria-label="Default select example">
-                        <option selected>Personnes</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                </div>
-                <div class="livraison-button px-5 py-2 my-3 align-self-center w-25">
-                    <p class="text-center">Réserver</p>
-                </div>
+    </div>
+
+    <div class="d-flex justify-content-center reserve-container">
+        <div class="booking">
+            <h2 class="text-center">Réserver une table</h2>
+            <p class="paragraph py-3">
+                Venez découvrir Beyrouth Café sur place en réservant votre table.
+                Votre réservation sera validée rapidement en fonction de nos disponibilités.
+            </p>
+
+            <div class="select-group">
+                <select class="form-select mx-1" aria-label="Default select example">
+                    <option selected>Date</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select mx-1" aria-label="Default select example">
+                    <option selected>Heure</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select mx-1" aria-label="Default select example">
+                    <option selected>Personnes</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="livraison-button">
+                <p class="text-center">Réserver</p>
             </div>
         </div>
+    </div>
 
-        <div class="vh-100 d-flex justify-content-center position-relative">
-            <img src="/assets/map.png" alt="" class="align-self-center position-relative">
+    <div class="map-container">
+        <div class="container">
             <div class="adress">
                 <h2>Beyrouth Café</h2>
                 <p class="paragraph">12 rue de Barla</p>
                 <p class="paragraph">06000 Nice</p>
                 <p class="paragraph">08.76.54.32.31</p>
             </div>
+
+        </div>
+    </div>
+
+    <div class="horaires-container">
+        <div class="horaires-inner">
+            <h2>Horaires</h2>
+            <div class="paragraph d-flex my-2">
+                Lun <p class="mx-3">10:00 - 12:00 </p>
+                <p class="mx-3">18:00 - 22:00</p>
+            </div>
+            <div class="paragraph d-flex my-2">
+                Mar <p class="mx-3">10:00 - 12:00 </p>
+                <p class="mx-3">18:00 - 22:00</p>
+            </div>
+            <div class="paragraph d-flex my-2">
+                Mer <p class="mx-3">10:00 - 12:00 </p>
+                <p class="mx-3">18:00 - 22:00</p>
+            </div>
+            <div class="paragraph d-flex my-2">
+                Jeu <p class="mx-3">10:00 - 12:00 </p>
+                <p class="mx-3">18:00 - 22:00</p>
+            </div>
+            <div class="paragraph d-flex my-2">
+                Ven <p class="mx-3">10:00 - 12:00 </p>
+                <p class="mx-3">18:00 - 22:00</p>
+            </div>
+            <div class="paragraph d-flex my-2">
+                Sam <p class="mx-3">10:00 - 12:00 </p>
+                <p class="mx-3">18:00 - 22:00</p>
+            </div>
+            <div class="paragraph d-flex my-2">
+                Dim <p class="mx-3">10:00 - 12:00 </p>
+                <p class="mx-3">18:00 - 22:00</p>
+            </div>
         </div>
 
-        <div class="vh-100 d-flex horaires-container ">
-            <div class="horaires-inner">
-                <h2>Horaires</h2>
-                <div class="paragraph d-flex my-2">
-                    Lun <p class="mx-3">10:00 - 12:00 </p> <p class="mx-3">18:00 - 22:00</p>  
-                </div>
-                <div class="paragraph d-flex my-2">
-                    Mar <p class="mx-3">10:00 - 12:00 </p> <p class="mx-3">18:00 - 22:00</p>  
-                </div>
-                <div class="paragraph d-flex my-2">
-                    Mer <p class="mx-3">10:00 - 12:00 </p> <p class="mx-3">18:00 - 22:00</p>  
-                </div>
-                <div class="paragraph d-flex my-2">
-                    Jeu <p class="mx-3">10:00 - 12:00 </p> <p class="mx-3">18:00 - 22:00</p>  
-                </div>
-                <div class="paragraph d-flex my-2">
-                    Ven <p class="mx-3">10:00 - 12:00 </p> <p class="mx-3">18:00 - 22:00</p>  
-                </div>
-                <div class="paragraph d-flex my-2">
-                    Sam <p class="mx-3">10:00 - 12:00 </p> <p class="mx-3">18:00 - 22:00</p>  
-                </div>
-                <div class="paragraph d-flex my-2">
-                    Dim <p class="mx-3">10:00 - 12:00 </p> <p class="mx-3">18:00 - 22:00</p>  
-                </div>
-            </div>
-
-            <div class="mx-5 px-5">
-                <h2>Infos pratiques</h2>
-                <div class="d-flex flex-column">
-                    <p class="info-container rounded my-3"><img src="./assets/handicape.png" class="mx-2">Accessibles PMR</p>
-                    <p class="info-container rounded my-3"><img src="./assets/vegetarien.png" class="mx-2">Plats végétariens</p>
-                    <p class="info-container rounded my-3"><img src="./assets/vegetarien.png" class="mx-2">Plats Vegan</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer d-flex flex-column justify-content-center position-relative">
-            <img src="./assets/logo.png" alt="" class="footer-logo align-self-center"/>
-            <h2 class="text-white text-center">Beyrouth Café</h2>
-            <h5 class="text-white text-center mb-5">From Beyrouth with Love · depuis 1998</h5>
-
-            <div class="d-flex justify-content-around align-self-center mb-5">
-                <div class="d-flex flex-column w-20 ju">
-                    <h3 class="text-center footer-title">Notre adresse</h3>
-                    <p class="text-center footer-paragraph">12 rue de Barla</p>
-                    <p class="text-center footer-paragraph">06100 Nice</p>
-                    <p class="text-center footer-paragraph">09.87.65.43.21</p>
-                </div>
-                <div class="d-flex flex-column w-20">
-                    <h3 class="footer-title text-center mb-4">Suivez-vous</h3>
-                    <div class="d-flex socials w-50 justify-content-around align-self-center">
-                        <img src="./assets/messenger.png" alt="" class="footer-icon mx-2">
-                        <img src="./assets/facebook.png" alt="" class="footer-icon mx-2">
-                        <img src="./assets/instagram.png" alt="" class="footer-icon mx-2">
-                        <img src="./assets/trip_advisor.png" alt="" class="footer-icon mx-2"> 
-                    </div>
-                </div>
-                <div class="d-flex flex-column w-20">
-                    <h3 class="text-center footer-title">Plus d'info</h3>
-                    <p class="text-center footer-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, magni!</p>
-                </div>
-            </div>
-
-            <div class="d-flex bg-black black-bar justify-content-around">
-                <p class="mentions mt-2">
-                    ©2022 BeyrouthCafe.com · Conditions générales de vente · Mentions légales
+        <div class="infos">
+            <h2>Infos pratiques</h2>
+            <div class="d-flex flex-column">
+                <p class="info-container">
+                    <img src="./assets/handicape.png" class="mx-2">Accessibles PMR
                 </p>
-                <img src="./assets/delicity.png" alt="">
+                <p class="info-container">
+                    <img src="./assets/vegetarien.png" class="mx-2">Plats végétariens
+                </p>
+                <p class="info-container last">
+                    <img src="./assets/vegetarien.png" class="mx-2">Plats Vegan
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer d-flex flex-column justify-content-center position-relative">
+        <img src="./assets/logo.png" alt="" class="footer-logo align-self-center" />
+        <h2 class="text-white text-center">Beyrouth Café</h2>
+        <h5 class="text-white text-center mb-5">From Beyrouth with Love · depuis 1998</h5>
+
+        <div class="footer-infos">
+            <div class="d-flex flex-column ju">
+                <h3 class="text-center footer-title">Notre adresse</h3>
+                <p class="text-center footer-paragraph">12 rue de Barla</p>
+                <p class="text-center footer-paragraph">06100 Nice</p>
+                <p class="text-center footer-paragraph">09.87.65.43.21</p>
+            </div>
+            <div class="d-flex flex-column">
+                <h3 class="footer-title text-center mb-4">Suivez-vous</h3>
+                <div class="d-flex socials w-50 justify-content-around align-self-center">
+                    <img src="./assets/messenger.png" alt="" class="footer-icon mx-2">
+                    <img src="./assets/facebook.png" alt="" class="footer-icon mx-2">
+                    <img src="./assets/instagram.png" alt="" class="footer-icon mx-2">
+                    <img src="./assets/trip_advisor.png" alt="" class="footer-icon mx-2">
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <h3 class="text-center footer-title">Plus d'info</h3>
+                <p class="text-center footer-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Repudiandae, magni!</p>
             </div>
         </div>
 
+        <div class="d-flex bg-black black-bar justify-content-around">
+            <p class="mentions mt-2">
+                ©2022 BeyrouthCafe.com · Conditions générales de vente · Mentions légales
+            </p>
+            <img src="./assets/delicity.png" alt="">
+        </div>
+    </div>
 
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
