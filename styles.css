@@ -60,13 +60,103 @@
     background-color: #192D2B;
 }
 
-@media screen and (max-width: 600px) {
+.top-bar i {
+    color: white;
+    font-size: 30px;
+}
 
-    /* .top-bar div:first-child { */
-    .top-bar div:not(:last-child) {
-        display: none;
-        width: 0;
+.top-bar select {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 17px;
+    min-width: 110px;
+}
+
+.phone {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .top-bar {
+        height: 60px;
+        display: flex;
+        align-items: center;
     }
+
+    .top-bar .desktop {
+        display: none;
+    }
+
+    .top-bar .phone {
+        display: block;
+    }
+}
+
+.second-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-block: 5px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .second-bar .desktop {
+        display: none;
+    }
+
+    .second-bar .phone {
+        display: block;
+    }
+
+    .second-bar h2 {
+        font-size: 1.1em;
+    }
+
+    .second-bar p {
+        font-size: 0.7em;
+    }
+}
+
+.menu-overlay {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+}
+
+.hide {
+    display: none;
+}
+
+.phone-menu {
+    height: 75vh;
+    width: 100%;
+    background-color: #192D2B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.phone-menu div, .phone-menu img {
+    margin-block: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.close-btn img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(109deg) brightness(103%) contrast(101%);
 }
 
 p {
@@ -82,10 +172,16 @@ h5 {
 .presentation {
     color: rgba(255, 255, 255, 0.6);
 }
+.socials {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
 
-.socials img {
-    width: 20px;
-    height: 20px;
+.socials i {
+    font-size: 20px;
+    margin-inline: 10px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .navbar-collapse {
@@ -114,6 +210,12 @@ h5 {
 .footer {
     background-image: url('./assets/nourriture-plats.jpg');
     background: rgba(29, 29, 29, 0.8);
+}
+
+.footer i {
+    margin-inline: 10px;
+    font-size: 45px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-infos {
@@ -150,6 +252,7 @@ h5 {
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding-top: 10vh;
 }
 
 .livraison-button {
@@ -388,7 +491,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
     .menu-wrapper {
-        height: 60vh;
+        height: 70vh;
     }
 
     .menu-cards .card:not(:first-child) {
@@ -576,6 +679,29 @@ h2 {
 
 .logo-container {
     margin-left: 9vw;
+    display: flex;
+    width: 40%;
+}
+
+.logo-container .paragraph {
+    text-align: left;
+}
+
+.links-container {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .logo-container {
+        margin: 0;
+        width: 80%;
+    }
+
+    .links-container {
+        width: 20%;
+    }
 }
 
 .custom-nav {

@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,69 +20,87 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex flex-column p-0 bg-white">
         <div class="top-bar w-100 d-flex justify-content-around py-2">
             <div class="d-flex w-25">
-                <div class="d-flex socials w-50 justify-content-around">
-                    <img src="./assets/messenger.png" alt="">
-                    <img src="./assets/facebook.png" alt="">
-                    <img src="./assets/instagram.png" alt="">
-                    <img src="./assets/trip_advisor.png" alt="">
+                <div class="socials desktop">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-tripadvisor"></i>
+                    <i class="fa fa-instagram"></i>
                 </div>
 
-
-                <div class="w-50">
+                <div class="w-50 desktop">
                     <select name="select">
-                        <option value="">Français</option>
-                        <option value="dog">Dog</option>
-                        <option value="cat">Cat</option>
-                        <option value="hamster">Hamster</option>
-                        <option value="parrot">Parrot</option>
-                        <option value="spider">Spider</option>
-                        <option value="goldfish">Goldfish</option>
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="en">🇬🇧 Anglais</option>
                     </select>
+                </div>
+
+                <div class="phone" onclick="changeView()">
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
 
 
             <div class="d-flex">
-                <p class="presentation">Beyrouth Café, 12 rue de la Buffa, 06000 Nice</p>
+                <p class="presentation desktop">Beyrouth Café, 12 rue de la Buffa, 06000 Nice</p>
                 <div class="ouverture mx-3 px-3">
-                    <p class="font-weight-bold">Ouvert jusque 22:00</p>
+                    <p class="font-weight-bold">Ouvert jusqu'à 22:00</p>
                 </div>
             </div>
         </div>
 
-        <div class="d-flex bg-white w-100 justify-content-around py-1">
-            <div class="d-flex logo-container w-40">
+        <div class="second-bar">
+            <div class="logo-container">
                 <img src="./assets/logo.png" alt="" class="logo mx-3">
                 <div class="mt-1">
-                    <h2 class="mb-0">Beyrouth Café</h5>
-                        <p class="paragraph">From Beyrouth with Love · depuis 1998</p>
+                    <h2 class="mb-0">Beyrouth Café</h2>
+                    <p class="paragraph">From Beyrouth with Love · depuis 1998</p>
                 </div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end w-50 custom-nav" id="navbarNav">
+
+            <div class="links-container custom-nav" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item desktop active">
                         <a class="nav-link" href="#">Voir la carte</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item desktop">
                         <a class="nav-link" href="#">Click & Collect</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item desktop">
                         <a class="nav-link" href="#">Livraison</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item desktop">
                         <a class="nav-link" href="#">Réserver</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item desktop">
                         <a class="nav-link" href="#">Infos pratiques</a>
                     </li>
                     <li class="nav-item">
                         <img src="./assets/panier.png" alt="" class="logo-nav">
                     </li>
                 </ul>
+            </div>
+
+            <div id="pmenu" class="menu-overlay hide">
+                <div class="phone-menu">
+                    <div class="close-btn" onclick="changeView()">
+                        <img src="./assets/xmark-solid.svg" alt="xmark-solid">
+                    </div>
+                    <img src="./assets/logo.png" alt="" class="logo mx-3">
+                    <div class="">
+                        <a class="nav-link" href="#">Voir la carte</a>
+                    </div>
+                    <div class="">
+                        <a class="nav-link" href="#">Click & Collect</a>
+                    </div>
+                    <div class="">
+                        <a class="nav-link" href="#">Livraison</a>
+                    </div>
+                    <div class="">
+                        <a class="nav-link" href="#">Réserver</a>
+                    </div>
+                    <div class="">
+                        <a class="nav-link" href="#">Infos pratiques</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -238,7 +256,8 @@
         <div class="booking">
             <h2 class="text-center">Réserver une table</h2>
             <p class="paragraph py-3">
-                Venez découvrir Beyrouth Café sur place en réservant votre table.
+                Venez découvrir Beyrouth Café sur place en réservant
+                votre table.
                 Votre réservation sera validée rapidement en fonction de nos disponibilités.
             </p>
 
@@ -344,10 +363,9 @@
             <div class="d-flex flex-column">
                 <h3 class="footer-title text-center mb-4">Suivez-vous</h3>
                 <div class="d-flex socials w-50 justify-content-around align-self-center">
-                    <img src="./assets/messenger.png" alt="" class="footer-icon mx-2">
-                    <img src="./assets/facebook.png" alt="" class="footer-icon mx-2">
-                    <img src="./assets/instagram.png" alt="" class="footer-icon mx-2">
-                    <img src="./assets/trip_advisor.png" alt="" class="footer-icon mx-2">
+                    <i class="fa fa-facebook-square"></i>
+                    <i class="fa fa-tripadvisor"></i>
+                    <i class="fa fa-instagram"></i>
                 </div>
             </div>
             <div class="d-flex flex-column">
@@ -368,14 +386,24 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+<script>
+    function changeView() {
+        let x = document.getElementById("pmenu");
+        if (x.className == "menu-overlay") {
+            x.className += " hide";
+        } else {
+            x.className = "menu-overlay"
+        }
+    }
+</script>
 </body>
 
 </html>
